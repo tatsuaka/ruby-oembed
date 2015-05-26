@@ -297,6 +297,9 @@ module OEmbed
     Skitch << "https://*.skitch.com/*"
     add_official_provider(Skitch)
 
+    Ted = OEmbed::Provider.new("http://www.ted.com/talks/oembed.json")
+    Ted << "http://ted.com/talks/*"
+    add_official_provider(Ted)
     ## Provider for clikthrough.com
     # http://corporate.clikthrough.com/wp/?p=275
     #Clickthrough = OEmbed::Provider.new("http://www.clikthrough.com/services/oembed/")
